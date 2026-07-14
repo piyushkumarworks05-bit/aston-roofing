@@ -1,0 +1,6 @@
+{
+  "name": "Aston Roofing",
+  "description": "Premium residential and commercial roofing portfolio website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

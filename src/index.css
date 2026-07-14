@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-primary: #1C1917; /* Deep Charcoal Stone */
+  --color-brand-secondary: #44403C; /* Stone 600 */
+  --color-brand-light: #FDFBF7; /* Soft Linen Warm White */
+  --color-brand-light-pure: #FFFFFF;
+  --color-brand-accent: #C06C44; /* Premium Burnt Copper */
+  --color-brand-accent-hover: #A55631; /* Darker copper */
+  --color-brand-accent-light: #FBF4F0; /* Pale warm copper */
+  --color-brand-border: #E7E5E4; /* Stone 200 */
+  --color-brand-success: #15803D; /* Forest Green */
+  --color-brand-error: #B91C1C; /* Dark Red */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-brand-light);
+    color: var(--color-brand-primary);
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-brand-light);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-brand-border);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-accent);
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Before and After slider drag custom styling */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
